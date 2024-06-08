@@ -1,0 +1,54 @@
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.mapCont{
+  align-self: flex-end;
+}
+
+.infoCard{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 25px;
+  width: 25rem;
+  /* height: 12rem; */
+  padding: 2rem;
+  background-color: var(--bg-color-info);
+  color: var(--txt-color-info);
+}
+.infoCard h2{
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.table td{
+  text-align: left;
+  padding: .7rem;
+}
+.table tr td:first-child{
+  font-weight: 700;
+}
+.table tr:not(:first-child) td:first-child{
+  position: relative;
+  /* margin */
+}
+.table tr:not(:first-child) td:first-child::before{
+  content: '➔';
+  /* position: absolute; */
+  margin-right: .4rem;
+  font-weight: 900;
+  font-size: 1rem;
+  color: var(--txt-color-arrows);
+}
+
+svg path {
+	cursor: pointer;
+}
+
+svg {
+	height: 600px;
+	width: auto;
+	padding-top: 50px;
+}

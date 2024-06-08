@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+html {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 500;
+}
+
+:root {
+  --font-family: 'Lato';
+  --bg-color-map: #062c43;
+  --bg-color-info: #054569;
+  --bg-color-card: gray;
+  --bg-color-headercont: #054569;
+  --txt-color-header: #fff;
+  --txt-color-info: #FFFFFA;
+  --txt-color-arrows: #008148;
+  --map-color-hovered: #FDFDFF;
+  --map-color-onHover: #FFC857;
+  --bg-color-table-odd: #5591a9;
+  --bg-color-table-even: #9ccddc;
+
+
+  /* #062c43 #054569 #5591a9 #9ccddc #ced7e0 */
+
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: var(--bg-color-map);
+}
