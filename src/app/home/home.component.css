@@ -30,6 +30,7 @@ main{
 }
 .table tr td:first-child{
   font-weight: 700;
+  width: 9rem;
 }
 .table tr:not(:first-child) td:first-child{
   position: relative;
@@ -52,4 +53,11 @@ svg {
 	height: 600px;
 	width: auto;
 	padding-top: 50px;
+}
+.allPath {
+  fill: black; /* Default color */
+  cursor: pointer;
+}
+.allPath:hover{
+  fill: #FFC857;
 }

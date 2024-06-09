@@ -8,30 +8,27 @@ import { CommonModule } from '@angular/common';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, HttpClientModule],
-  providers:[CountryInfoService],
-  // template: '<p>my App template</p>',
+  providers: [CountryInfoService],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
-
 })
 export class HomeComponent {
-  countryInfo:any ={}
+  countryInfo: any = {};
+  originalColor = 'white'; // Default color of the SVG paths
+  hoverColor = '#FFC857'; // Color when hovered
+
   constructor(private dataService: CountryInfoService) {}
 
   onClick(event: MouseEvent): void {
     const target = event.target as SVGPathElement;
     const id = target.id;
-    // const name = target.;
-    if(id){
-      this.dataService.getDataById(id).subscribe(response=>{
-        this.countryInfo = response
-        console.log(this.countryInfo)
-      })
+    if (id) {
+      this.dataService.getDataById(id).subscribe((response) => {
+        this.countryInfo = response;
+        // console.log(this.countryInfo)
+      });
     }
   }
 
-
-
-
-
+  
 }
