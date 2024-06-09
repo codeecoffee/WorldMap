@@ -4,6 +4,7 @@
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1010 666"
       aria-label="World Map"
+      (click)="onClick($event)"
     >
       <path
         class="allPath"
@@ -1549,27 +1550,29 @@
       <tbody>
         <tr>
           <td>Country name:</td>
-          <td id="nomePais">Hover over a country</td>
+          <td id="nomePais">
+            {{ countryInfo.name || "Hover over a country" }}
+          </td>
         </tr>
         <tr>
           <td>Capital:</td>
-          <td id="capital">Country's capitol</td>
+          <td id="capital">{{countryInfo.capitalCity || "Country's capital"}}</td>
         </tr>
         <tr>
           <td>Region:</td>
-          <td id="regiao">General Region</td>
+          <td id="regiao">{{countryInfo.region?.value || 'General Region'}}</td>
         </tr>
         <tr>
           <td>Income Level:</td>
-          <td id="pib">Country's income</td>
+          <td id="pib">{{countryInfo.incomeLevel?.value || "Country's income"}}</td>
         </tr>
         <tr>
           <td>Longitude:</td>
-          <td id="long">Global Longitude</td>
+          <td id="long">{{countryInfo.longitude || 'Country Longitude'}}</td>
         </tr>
         <tr>
           <td>Latitude:</td>
-          <td id="lat">Global Latitude</td>
+          <td id="lat">{{countryInfo.latitude || 'Country Latitude'}}</td>
         </tr>
       </tbody>
     </table>

@@ -1,0 +1,32 @@
+Create an object for me to store the information received and I want to display it in the element I have in home.component.html set up like this:
+<div class="infoCard">
+    <h2>Country Information</h2>
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Country name:</td>
+          <td id="nomePais">Hover over a country</td>
+        </tr>
+        <tr>
+          <td>Capital:</td>
+          <td id="capital">Country's capitol</td>
+        </tr>
+        <tr>
+          <td>Region:</td>
+          <td id="regiao">General Region</td>
+        </tr>
+        <tr>
+          <td>Income Level:</td>
+          <td id="pib">Country's income</td>
+        </tr>
+        <tr>
+          <td>Longitude:</td>
+          <td id="long">Global Longitude</td>
+        </tr>
+        <tr>
+          <td>Latitude:</td>
+          <td id="lat">Global Latitude</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
